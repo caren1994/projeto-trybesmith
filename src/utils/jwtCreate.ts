@@ -2,19 +2,15 @@ import jwt, { SignOptions } from 'jsonwebtoken';
 
 const secret = process.env.JWT_SECRET || 'secret';
 
-export function createToken(body:number) {
-  const payload = {
-    id: body,
-  };
+export default function createToken(userId:number) {
+  // const payload = {
+  //   userId: body,
+  // };
   const config: SignOptions = {
     expiresIn: '7d',
     algorithm: 'HS256',
   };
 
-  const token = jwt.sign(payload, secret, config);
+  const token = jwt.sign({ userId }, secret, config);
   return token;
-}
-export function validateTokenUser(token: string) {
-  const verify = jwt.verify(token, 'secret');
-  return verify;
 }

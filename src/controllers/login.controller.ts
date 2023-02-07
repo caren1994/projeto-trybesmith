@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import LoginService from '../services/login.service';
-import { createToken } from '../utils/jwtCreate';
+import createToken from '../utils/jwtCreate';
 
 export default class OrderController {
   constructor(private loginService = new LoginService()) { }

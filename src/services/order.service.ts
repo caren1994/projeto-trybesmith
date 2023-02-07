@@ -16,4 +16,13 @@ export default class OrderService {
       return { message: 'ORDER NOT FOUND' };
     }
   }
+
+  async createO(id:number, productsIds:number[]) {
+    try {
+      const result = await this.orderModel.createO(id, productsIds);
+      return result;
+    } catch (error) {
+      return error;
+    }
+  }
 }
