@@ -27,18 +27,18 @@ Projeto realizado durante módulo de Back-end do curso de desenvolvimento web da
 
   **:warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior.
 
-- [ ] `docker-compose up -d`
-- [ ] `docker exec -it trybesmith bash`
-- [ ] `npm install`
-- [ ] `npm run restore`
-- [ ] `npm run dev`
+- `docker-compose up -d`
+- `docker exec -it trybesmith bash`
+- `npm install`
+- `npm run restore`
+- `npm run dev`
 
 **Localmente:**
 
 **Necessita ter um banco de dados(MySql) instalado localmente**
 
-- [ ] `npm install`
-- [ ] `npm run restore`
-- [ ] `npm run dev`
+- `npm install`
+- `npm run restore`
+- `npm run dev`
 
 
